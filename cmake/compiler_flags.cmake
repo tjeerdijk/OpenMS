@@ -89,6 +89,9 @@ message(STATUS "Compiler checks for conversion: ${CXX_WARN_CONVERSION}")
 
 # Function to add compiler flags to a target with proper PUBLIC/PRIVATE visibility
 function(openms_add_compiler_flags target_name)
+   target_compile_options(${target_name} PRIVATE /d2FH4-)
+   target_link_options(${target_name} PRIVATE /d2:-FH4-)
+
   #------------------------------------------------------------------------------
   # PUBLIC flags (propagated to dependent targets)
   #------------------------------------------------------------------------------
