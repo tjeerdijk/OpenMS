@@ -219,8 +219,10 @@ jobs:
       uses: jurplel/install-qt-action@v4
       with:
         version: '6.8.3'
+        target: 'desktop'
+        arch: 'win64_msvc2022_64'
         cache: 'false'
-        archives: 'qtsvg qtimageformats qtbase'
+        # archives: 'qtsvg qtimageformats qtbase'
 
     - name: Setup build tools (and system contrib on Linux and Mac)
       id: tools-prefix
